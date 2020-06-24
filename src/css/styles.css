@@ -1,0 +1,9 @@
+#crud-buttons > a{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.alert-request{
+    background-color: #fbf59c;
+}
