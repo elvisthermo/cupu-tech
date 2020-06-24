@@ -33,23 +33,38 @@ function App() {
     },[]);
 
     async function handleAddRequest(){
-        // const response = await api.post('/b',{
-        //     id: `id ${Date.now()}`,
-        //     name: `pedido ${Date.now()}`,
-        //     date: Date.now(),
-        //     desc: `pedido realizado ${Date.now()}`,
-        //     status: false
-        // }
-        // );
-        
+        const addRequest = {
+            id: `id ${Date.now()}`,
+            name: `pedido ${Date.now()}`,
+            date: Date(),
+            desc: `pedido realizado ${Date.now()}`,
+            status: false
+        }
+
+        setFifoRequest([...fifoRequest,addRequest]);
     }
 
     function handleFinishRequest(id){
-        alert("foi finalizado");
-    }
+        const finishRequest = fifoRequest.map(d=>{
+            if(d.id===id){
+                d.status = true
+            }
+      
+            return d;
+    })
+
+    const arrayfinish = finishRequest.filter(d=> !d.status)
+    setFifoRequest(arrayfinish);
+    alert("Pedido finalizado");
+}
 
     function handleDeleteRequest(id){
-        alert("foi deletado");
+        const filerRequest = fifoRequest.filter(d=>d.id!==id);
+
+        console.log(filerRequest)
+        setFifoRequest(filerRequest);
+        alert("Pedido cancelado");
+        
     }
 
     return (
@@ -120,10 +135,12 @@ function App() {
                                                     data.date}
                                                 </td>
                                                     
-                                                    <td id="crud-buttons" className="level-right"><a className="button is-small is-primary"
-                                                            onClick={handleFinishRequest}>Finalizar</a>
+                                                    <td id="crud-buttons" className="level-right">
+                                                        <a className="button is-small is-primary"
+                                                            onClick={()=>handleFinishRequest(data.id)}>Finalizar
+                                                        </a>
                                                     <a className="button is-small is-danger"
-                                                            onClick={handleDeleteRequest}>Cancelar</a>
+                                                            onClick={()=>handleDeleteRequest(data.id)}>Cancelar</a>
                                                     </td>
                                                 </tr>
                                                 )
