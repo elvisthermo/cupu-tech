@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cupu-tech/static/css/main.06ec8cfc.chunk.css",
+    "main.js": "/cupu-tech/static/js/main.53ba0bad.chunk.js",
+    "main.js.map": "/cupu-tech/static/js/main.53ba0bad.chunk.js.map",
+    "runtime-main.js": "/cupu-tech/static/js/runtime-main.c6c4bc81.js",
+    "runtime-main.js.map": "/cupu-tech/static/js/runtime-main.c6c4bc81.js.map",
+    "static/js/2.6b8bf02c.chunk.js": "/cupu-tech/static/js/2.6b8bf02c.chunk.js",
+    "static/js/2.6b8bf02c.chunk.js.map": "/cupu-tech/static/js/2.6b8bf02c.chunk.js.map",
+    "index.html": "/cupu-tech/index.html",
+    "precache-manifest.d0778dc3f8b734aed08b63ee341dc4a7.js": "/cupu-tech/precache-manifest.d0778dc3f8b734aed08b63ee341dc4a7.js",
+    "service-worker.js": "/cupu-tech/service-worker.js",
+    "static/css/main.06ec8cfc.chunk.css.map": "/cupu-tech/static/css/main.06ec8cfc.chunk.css.map",
+    "static/js/2.6b8bf02c.chunk.js.LICENSE.txt": "/cupu-tech/static/js/2.6b8bf02c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6c4bc81.js",
+    "static/js/2.6b8bf02c.chunk.js",
+    "static/css/main.06ec8cfc.chunk.css",
+    "static/js/main.53ba0bad.chunk.js"
+  ]
+}
