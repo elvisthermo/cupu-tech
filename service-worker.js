@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cupu-tech/precache-manifest.d0778dc3f8b734aed08b63ee341dc4a7.js"
+  "/cupu-tech/precache-manifest.eaa582cb22be5e7f822a466b6e13e65b.js"
 );
 
 self.addEventListener('message', (event) => {
