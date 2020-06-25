@@ -1,8 +1,17 @@
 
-## Listage de produtos 
-Projeto test de listagem adição e remoção de pedidos 
+## Listagem de Pedidos
+Projeto test cupu tech para listatagem de pedidos
 
-### Link: https://elvisthermo.github.io/cupu-tech/
+#### Link: https://elvisthermo.github.io/cupu-tech/
+
+#### Funcionalidas do projeto
+* listagem
+* adição
+* remoção
+* finalização de pedido
+* destaque no pedido mais antigo recebido
+* pedidos ordenados pelo tempo de entrada
+
 ### especificação Json.
 
 ``
